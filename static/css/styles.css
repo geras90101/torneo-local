@@ -62,3 +62,32 @@ footer {
     background-color: #002F5E;
     color: white;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(to right, #003366, #0066cc);
+}
+
+footer {
+    background: #003366;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+nav a.nav-link {
+    color: #ffffff !important;
+}
+
+nav a.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.table {
+    margin-top: 20px;
+}
