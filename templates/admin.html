@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Administración{% endblock %}
+{% block content %}
+<h1>Panel de Administración</h1>
+<form method="POST" action="/admin/equipos">
+    <h2>Registrar Equipo</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required>
+    <button type="submit">Registrar</button>
+</form>
+
+<form method="POST" action="/admin/partidos">
+    <h2>Registrar Partido</h2>
+    <label for="local">Equipo Local:</label>
+    <input type="text" name="local" required>
+    <label for="visitante">Equipo Visitante:</label>
+    <input type="text" name="visitante" required>
+    <label for="fecha">Fecha:</label>
+    <input type="date" name="fecha" required>
+    <label for="hora">Hora:</label>
+    <input type="time" name="hora" required>
+    <button type="submit">Registrar</button>
+</form>
+{% endblock %}

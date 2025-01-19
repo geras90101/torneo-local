@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Torneo Local</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+    <h1>Bienvenido al Torneo Local</h1>
+    <p>Consulta las estadísticas y administra los equipos y partidos.</p>
+    <div class="cards">
+        <div class="card">
+            <h2>Estadísticas</h2>
+            <p>Consulta las posiciones y los mejores jugadores.</p>
+            <a href="/estadisticas">Ver estadísticas</a>
+        </div>
+        <div class="card">
+            <h2>Administración</h2>
+            <p>Registra equipos, partidos y resultados.</p>
+            <a href="/admin">Ir a Administración</a>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
